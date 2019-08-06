@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,27 @@
     <!--Go to https://console.firebase.google.com-->
     <!--Sign in and add a project "fireMessage"-->
     <!--PASTE SNIPPET HERE-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDuWvkft6YmR2U1NJ4dSpV64M_fNMcoWS4",
+            authDomain: "fire-message-c18e7.firebaseapp.com",
+            databaseURL: "https://fire-message-c18e7.firebaseio.com",
+            projectId: "fire-message-c18e7",
+            storageBucket: "",
+            messagingSenderId: "749401533512",
+            appId: "1:749401533512:web:c069de88d816d38d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
 
 
@@ -17,16 +39,17 @@
     <script src="lib/js/main.js" defer></script>
     <link rel="stylesheet" href="lib/css/style.css">
 </head>
+
 <body>
 
     <!--Add your name-->
-    <h1>Bob's Messaging App</h1>
+    <h1>Zaire's Messaging App</h1>
 
     <!--This div will be populated with messages-->
     <div class="allMessages">
-        
+
     </div>
-    
+
     <!--For user to input messages-->
     <div class="userContainer">
         <form>
@@ -44,4 +67,5 @@
         </form>
     </div>
 </body>
+
 </html>
